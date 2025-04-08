@@ -1,7 +1,7 @@
 header {
   background-color: mediumaquamarine;
   width: 100%; /* 幅いっぱいを指定 */
-  height: 100px; /* 高さを50pxに指定 */
+  height: 80px; /* 高さを50pxに指定 */
   padding: 20px 50px; /* ヘッダーに上下左右それぞれ余白を指定 */
   box-sizing: border-box; /* padding分を含んで幅を100%にするため */
   position: fixed; /* ウィンドウを基準に画面に固定 */
@@ -9,5 +9,28 @@ header {
   left: 0; /* 左右の固定位置を左から0pxにする */
   display: flex; /* 中の要素を横並びにする */
   align-items: center; /* 中の要素を上下中央に並べる */
+  font-size: 10px;
+  justify-content: space-between;
+}
+
+.create-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: mediumaquamarine;
+  /*border: 2px solid #fff;*/
+  text-decoration: underline;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.create-button:hover {
+  background-color: whitesmoke;
+  color: mediumaquamarine;
+}
+
+p {
+  font-size: 25px;
+  background: linear-gradient(transparent 80%, mediumaquamarine 100%);
+  display: inline-block;
 }
 

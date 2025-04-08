@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './GetThreadList.css'
 
 export const GetThreadList = () => {
   const [threads, setThreads] = useState([]);
@@ -27,7 +28,7 @@ export const GetThreadList = () => {
       <ul>
         {threads.map((data) => (
           <li key={data.id}>
-            title:{data.title}
+            <button onClick={() => alert(`スレッドID: ${data.id}`)}>title:{data.title}</button>
           </li>
         ))}
       </ul>
