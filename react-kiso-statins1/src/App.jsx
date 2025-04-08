@@ -23,7 +23,7 @@ function App() {
           <button className="create-button">スレッド新規作成</button>
         </Link>
     </header>
-    <div style={{ paddingTop: '100px' }}>
+    <div>
         <Routes>
           <Route path="/" element={
             <>
