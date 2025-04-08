@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import {GetThreadList} from './GetThreadList.jsx'
 import { MakeThreadList } from './MakeThreadList.jsx';
+import { GetThreadPosts } from './GetThreadPosts.jsx'; 
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -31,6 +32,7 @@ function App() {
             </>
           } />
           <Route path="/threads/new" element={<MakeThreadList />} />
+          <Route path="/threads/:thread_id" element={<GetThreadPosts />} />
         </Routes>
       </div>
     </Router>

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './GetThreadList.css'
 
 export const MakeThreadList = () => {
-  const [title, setTitle] = useState([]);
+  const [title, setTitle] = useState('');
   const navigate = useNavigate();
 
    const handleSubmit = async (e) => {

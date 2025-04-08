@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './GetThreadList.css'
 
 export const GetThreadList = () => {
@@ -28,7 +29,9 @@ export const GetThreadList = () => {
       <ul>
         {threads.map((data) => (
           <li key={data.id}>
-            <button onClick={() => alert(`スレッドID: ${data.id}`)}>title:{data.title}</button>
+            <Link to={`/threads/${data.id}`} className="thread-link">
+               title: {data.title}
+            </Link>
           </li>
         ))}
       </ul>
